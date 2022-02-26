@@ -1,0 +1,29 @@
+h1 {
+    color:rgb(17, 16, 16);
+    align-self: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.allLetters {
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+}
+
+html {
+    font-family: Verdana; 
+    background: rgb(131,58,180);
+    background: radial-gradient(circle, rgba(131,58,180,1) 0%, rgba(53,29,253,0.8113446062018558) 32%, rgba(94,59,215,1) 46%, rgba(252,176,69,1) 100%);
+}
+
+.newLetter {
+    height: 100px;
+    width: 75px;
+    background-color: #555;
+    align-self: center;
+    margin-right: 5%;
+}
