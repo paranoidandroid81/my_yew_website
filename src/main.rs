@@ -10,6 +10,9 @@ fn app() -> Html {
     letters.push("A".to_string());
     letters.push("F".to_string());
 
+
+    let inputs = (1..=letters.len()).collect::<Vec<_>>();
+
     html! {
         <>
             <div class="container">
@@ -20,6 +23,14 @@ fn app() -> Html {
                         html!{<Letter letter={curr}/>}
                     }).collect::<Html>()
                 }
+                </div>
+                <div class="inputLetters">
+                    {
+                        inputs.into_iter().map(|_| {
+                            html!{<input class="letter inputLetter" maxlength="1" />}
+                        }).collect::<Html>()
+                    }
+                    <button>{"Submit"}</button>
                 </div>
             </div>
         </>

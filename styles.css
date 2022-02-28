@@ -20,10 +20,26 @@ html {
     background: radial-gradient(circle, rgba(131,58,180,1) 0%, rgba(53,29,253,0.8113446062018558) 32%, rgba(94,59,215,1) 46%, rgba(252,176,69,1) 100%);
 }
 
-.newLetter {
+.letter {
     height: 100px;
     width: 75px;
-    background-color: #555;
     align-self: center;
     margin-right: 5%;
+}
+
+.newLetter {
+    background-color: #555;
+}
+
+.inputLetters {
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    margin-right: 10px;
+}
+
+.inputLetter {
+    margin-top: 5%;
+    width: 50px;
+    font-size: 50px
 }
